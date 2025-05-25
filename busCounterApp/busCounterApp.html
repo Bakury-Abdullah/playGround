@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>playGround</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <title>Challenges for Abdullah</title>
+        <link rel="stylesheet" href="busCounterApp.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,13 +17,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
 </head>
-<body>
-    <div class="navbar">
+    <body>
+        <div class="navbar">
         <div class="logo"><a href="../index.html">playGround</a></div>
         <div>|</div>
         <div class="nav-items">
-        <div class="underline"><a href="./busCounterApp/busCounterApp.html">busCounterApp</a></div>
+        <div class="underline current-page"><a href="../busCounterApp/busCounterApp.html">busCounterApp</a></div>
         </div>
         <div class="nav-items">
         <div class="underline">scrimbaCopying</div>
@@ -29,20 +33,17 @@
         <div class="underline">freeUseFile</div>
         </div>
     </div>
-    <h1>I'm a Designer and a Web Developer</h1>
-    <div class="content">
-    <h2>And this is my game</h2>
-    <p>With time I intend to make this challenge space
-        a great place for learning and improving my skills
-        in design and web development.
-        I will be adding more games and designed pages as I go along.</p>
-        <p>For the meantime, I enjoy using three files:</p>
-        <ul>
-            <li>The bus counter app</li>
-            <li>The file where I copy Scrimba progression</li>
-            <li>And another one where I type random code for the sake of try outs</li>
-        </ul>
-        </div>
-        <img src="Images/texture.png" alt="textured glowing sphere" class="texture">
-</body>
+        <div class="width">
+            <div class="container">
+            <div class="perspective">
+            <div class="counter">
+                <p class="title">Bus counter</p>
+                <h2 id="count-el">0</h2> <p>Busses passed by </p>
+                <button id="count-btn" onclick="counter()">Passed</button>
+            </div>
+            </div>
+            </div>
+            </div>
+    </body>
+    <script src="busCounterApp.js"></script>
 </html>
