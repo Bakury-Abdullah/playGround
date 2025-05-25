@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F3F3F3;
+    color: #303030;
+}
+
+.navbar{
+    margin: 2.5em auto;
+    width: 90.5em;
+    height: 6.5em;
+    background-color: #F3F3F3;
+    box-shadow:  2px 2px 14px rgba(138, 138, 138, 0.48),
+                -4px -4px 8px rgb(255, 255, 255);
+    border-radius: 80px;
+    transition: all .500ms ease-in-out;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: instrument-sans, sans-serif;
+}
+
+/* html body .navbar:hover{
+    box-shadow: none;
+    box-shadow: inset 4px 4px 12px rgba(0, 0, 0, 0.48),
+                inset -6px -6px 12px rgb(255, 255, 255);
+    background-color: #f5f5f5;
+} */
+
+.nav-items, .logo{
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: #303030;
+}
+
+.nav-items{
+    position: relative;
+}
+.underline:before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #303030;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+.underline:hover:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    background-color: #303030;
+    bottom: -5px;
+}
+
+.logo{
+    font-weight: 600;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 1em 10rem;
+    font-family: Montserrat, sans-serif;
+    text-shadow: 0 0 16px #fff;
+}
+
+.content{
+    font-family: Hind Madurai, sans-serif;
+    margin: 2em 17em;
+}
+
+h2{
+    font-family: lora;
+    font-style: italic;
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin: 0 0 1em 0;
+
+}
+
+ul{
+    padding-left: 2em;
+}
+
+p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+}
+
+.texture{
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+    box-shadow:  2px 2px 14px rgba(138, 138, 138, 0.48),
+                -4px -4px 8px rgb(255, 255, 255);
+ display: flex;
+ justify-self: flex-end;
+ margin: 2em 10em;
+}
+
+/* add starts to the bottom of
+ the screen next to the moon using divs, and also enhance your moon ;) */
